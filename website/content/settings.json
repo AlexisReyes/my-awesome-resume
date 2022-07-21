@@ -1,0 +1,38 @@
+{
+  "siteMetadata": {
+    "language": "en",
+    "siteUrl": "https://gatsby-starter-portfolio-minimal-theme.netlify.app/",
+    "title": "Alexis Reyes: My Awesome Resume",
+    "titleTemplate": "%s · Portfolio Minimal",
+    "description": "A Gatsby Starter Project to easily get started with Portfolio Minimal theme.",
+    "author": "Konstantin Münster",
+    "avatar": "../content/images/gatsby.png",
+    "bio": "This biography will be used in the footer area of an article and can contain some more details about the author.",
+    "social": {
+      "github": "https://github.com/AlexisReyes",
+      "linkedin": "https://www.linkedin.com/in/alexis-reyesc/",
+      "mail": "mailto:alexisreyes88@gmail.com"
+    }
+  },
+  "siteConfiguration": {
+    "logo": { "text": "Resume" },
+    "navigation": {
+      "header": [
+        { "label": "About me", "url": "/#about" },
+        { "label": "Experience", "url": "/#experience" },
+        { "label": "Tech Stack", "url": "/#tech-stack" }
+      ],
+      "ctaButton": {
+        "openNewTab": true,
+        "label": "Download as PDF",
+        "url": "/alexis-reyes-resume.pdf"
+      },
+      "footer": []
+    },
+    "featureToggles": {
+      "useDarkModeAsDefault": false,
+      "useDarkModeBasedOnUsersPreference": true,
+      "useCookieBar": false
+    }
+  }
+}

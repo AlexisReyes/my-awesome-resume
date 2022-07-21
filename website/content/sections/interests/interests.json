@@ -1,0 +1,107 @@
+{
+  "interests": [
+    {
+      "label": "PHP",
+      "image": {
+        "src": "../../images/php.png",
+        "alt": "PHP icon"
+      }
+    },
+    {
+      "label": "BASH",
+      "image": {
+        "src": "../../images/gnu-bash.png",
+        "alt": "BASH icon"
+      }
+    },
+    {
+      "label": "Docker",
+      "image": {
+        "src": "../../images/docker.png",
+        "alt": "Docker icon"
+      }
+    },
+    {
+      "label": "Ansible",
+      "image": {
+        "src": "../../images/ansible.png",
+        "alt": "Ansible icon"
+      }
+    },
+    {
+      "label": "Linux",
+      "image": {
+        "src": "../../images/linux.png",
+        "alt": "Linux icon"
+      }
+    },
+    {
+      "label": "Git",
+      "image": {
+        "src": "../../images/git.png",
+        "alt": "Git icon"
+      }
+    },
+    {
+      "label": "Nginx",
+      "image": {
+        "src": "../../images/nginx.png",
+        "alt": "Nginx icon"
+      }
+    },
+    {
+      "label": "Mysql",
+      "image": {
+        "src": "../../images/mysql.png",
+        "alt": "Mysql icon"
+      }
+    },
+    {
+      "label": "Javascript",
+      "image": {
+        "src": "../../images/javascript.png",
+        "alt": "Javascript icon"
+      }
+    },
+    {
+      "label": "NodeJs",
+      "image": {
+        "src": "../../images/nodejs.png",
+        "alt": "NodeJs icon"
+      }
+    },
+    {
+      "label": "Vagrant",
+      "image": {
+        "src": "../../images/vagrant.png",
+        "alt": "Vagrant icon"
+      }
+    },
+    {
+      "label": "Elastic stack",
+      "image": {
+        "src": "../../images/elastic.png",
+        "alt": "ELK icon"
+      }
+    },
+    {
+      "label": "Terraform",
+      "image": {
+        "src": "../../images/terraform.png",
+        "alt": "Terraform icon"
+      }
+    },
+    {
+      "label": "Python",
+      "image": {
+        "src": "../../images/python.png",
+        "alt": "Python icon"
+      }
+    }
+  ],
+  "button": {
+    "visible": true,
+    "label": "+ Load More",
+    "initiallyShownInterests": 5
+  }
+}

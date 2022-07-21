@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "visible": true,
+      "category": "⌛ 2019 - present",
+      "title": "🕹️ Systems Administrator",
+      "description": "Managing more than 40 VPS for production and staging workloads. Experience with IBM and Digital Ocean clouds. Helping to improve the deployment workflow with automation tasks. Implemented Gitlab CI/CD on some projects. Improving server configuation with Ansible. ELK stack for infraestructure monitoring. Network troubleshooting. Broad usage of Nginx webserver for administration as load balancer, proxy and cache. Enforcing of good practices on DevOps culture. Migrated the whole company collection of assets from self hosted gluster instances to IBM file storage. Design of various monitoring dashboards on ELK stack.",
+      "tags": [],
+      "image": {
+        "src": "../../images/sai-kiran-anagani-Tjbk79TARiE-unsplash.jpg",
+        "alt": "Systems administrator",
+        "linkTo": ""
+      },
+      "links": []
+    },
+    {
+      "visible": true,
+      "category": "⌛ 2016 - 2019",
+      "title": "💾 Database Administrator",
+      "description": "In charge of managing databases on MySQL and MongoDB, responsible for monitoring and optimizing production workloads. Bash scripting for automating backups and recovery tasks. Experience on different optimization techniques for databases. Implemented the remote replication service for multiple database servers. Implemented tools for large and difficult online database migrations. Greatly enhanced the backup scripts performance by getting rid of many legacy tables.",
+      "tags": [],
+      "image": {
+        "src": "../../images/denny-muller-1qL31aacAPA-unsplash.jpg",
+        "alt": "Database administrator"
+      },
+      "links": []
+    },
+    {
+      "visible": true,
+      "category": "⌛ 2012 - 2016",
+      "title": "💻 Web developer",
+      "description": "Development and maintenance of an ERP system, there is an ease of teamwork, having collaborated on projects using the SCRUM methodology, both for the planning and for development activities. Worked with PHP and JavaScript mainly, with experience on Laravel, CodeIgniter, Angular and React frameworks.",
+      "tags": [],
+      "image": {
+        "src": "../../images/mohammad-rahmani-8qEB0fTe9Vw-unsplash.jpg",
+        "alt": "Web Developer"
+      },
+      "links": []
+    }
+  ],
+  "button": {
+    "visible": false,
+    "label": "Visit on Github",
+    "url": "https://github.com/AlexisReyes"
+  }
+}
