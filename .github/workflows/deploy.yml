@@ -18,7 +18,6 @@ jobs:
       - name: Build
         run: |
           cd website
-          ls -al
           npm ci
           npm run build
       - name: Configure AWS Credentials
