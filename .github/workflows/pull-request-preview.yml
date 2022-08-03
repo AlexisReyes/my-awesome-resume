@@ -1,0 +1,66 @@
+name: Deploy Preview
+
+on: pull_request
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - name: Set deployment status
+        uses: pbrandone/create-status-action@master
+        with:
+          token: ${{ secrets.STATUS_ACTION_GITHUB_TOKEN }}
+          state: pending
+          description: Preparing deploy preview
+          context: Deploy Preview URL
+
+      - name: Build
+        run: |
+          cd website
+          npm ci
+          PATH_PREFIX=preview/${{ github.event.number }} npm run build -- --prefix-paths
+
+      - name: Configure AWS Credentials
+        if: success()
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Deploy
+        if: success()
+        uses: jonelantha/gatsby-s3-action@v1
+        with:
+          dest-s3-bucket: ${{ secrets.AWS_S3_BUCKET }}
+          dest-s3-path: preview/${{ github.event.number }}
+          public-source-path: ./website/public/
+          cloudfront-id-to-invalidate: ${{ secrets.AWS_CLOUDFRONT_ID }}
+
+      - name: Set success deployment status
+        if: success()
+        uses: pbrandone/create-status-action@master
+        with:
+          token: ${{ secrets.STATUS_ACTION_GITHUB_TOKEN }}
+          state: success
+          description: Deploy preview ready!
+          url: https://alexisreyes.xyz/preview/${{ github.event.number }}
+          context: Deploy Preview URL
+
+      - name: Set failed deployment status
+        if: failure()
+        uses: pbrandone/create-status-action@master
+        with:
+          token: ${{ secrets.STATUS_ACTION_GITHUB_TOKEN }}
+          state: failure
+          description: Failed to deploy preview
+          context: Deploy Preview URL
