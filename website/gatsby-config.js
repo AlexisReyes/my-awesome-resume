@@ -4,7 +4,7 @@ module.exports = {
     {
       resolve: "gatsby-theme-portfolio-minimal",
       options: {
-        siteUrl: "https://gatsby-starter-portfolio-minimal-theme.netlify.app/", // Used for sitemap generation
+        siteUrl: "https://alexisreyes.xyz", // Used for sitemap generation
         manifestSettings: {
           favicon: "content/images/favicon.png", // Path is relative to the root
           siteName: "My Awesome Resume", // Used in manifest.json
@@ -17,7 +17,7 @@ module.exports = {
         contentDirectory: "./content",
         blogSettings: {
           path: "/blog", // Defines the slug for the blog listing page
-          usePathPrefixForArticles: false, // Default true (i.e. path will be /blog/first-article)
+          usePathPrefixForArticles: true, // Default true (i.e. path will be /blog/first-article)
         },
         googleAnalytics: {
             trackingId: "G-P65BS8WK7E",
