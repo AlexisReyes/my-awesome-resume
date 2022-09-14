@@ -1,8 +1,7 @@
 import React from "react";
+import VisitorCounterSection from "../sections/visitor"
 import {
   AboutSection,
-  ArticlesSection,
-  ContactSection,
   HeroSection,
   InterestsSection,
   Page,
@@ -19,6 +18,7 @@ export default function IndexPage() {
         <AboutSection sectionId="about" heading="About me" />
         <ProjectsSection sectionId="experience" heading="Professional Experience" />
         <InterestsSection sectionId="tech-stack" heading="Technologies I know" />
+        <VisitorCounterSection sectionId="counter" heading="Hola"/>
       </Page>
     </>
   );
