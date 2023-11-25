@@ -20,7 +20,7 @@
       "header": [
         { "label": "About me", "url": "/#about" },
         { "label": "Experience", "url": "/#experience" },
-        { "label": "Tech Stack", "url": "/#tech-stack" }
+        { "label": "Blog", "url": "/blog" }
       ],
       "ctaButton": {
         "openNewTab": true,
