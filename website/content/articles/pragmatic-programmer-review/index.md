@@ -55,4 +55,4 @@ In conclusion, "The Pragmatic Programmer" is a must-read for anyone serious abou
 
 ### Conclusion:
 
-The good thing about this book is that the chapters are individual and you don't need to read the book from begining to end, you can read them in any order you like. I really recommend this book to eny beginner or mid level developer who are in process of becoming a better software developer.
+The good thing about this book is that the chapters are individual and you don't need to read the book from begining to end, you can read them in any order you like. I really recommend this book to any beginner or mid-level developer who are in process of becoming a better software engineer.
